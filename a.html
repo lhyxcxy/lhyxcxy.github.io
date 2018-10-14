@@ -1,0 +1,51 @@
+﻿<?php
+header('HTTP/1.1 404 Not Found');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="all/icon.png" rel="shortcut icon" type="image/x-icon" />
+<title>欢迎访问彩名堂</title>
+<link rel="stylesheet" href="all/buttons.css">
+<!--<script src="jquery-3.0.0.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+$(function(){
+
+$(".reg a").click()
+})
+</script>
+<style type="text/css">
+body { background: #3a3c48 url(all/bj.png);}
+.logo { text-align:center;margin-top:108px;padding:0px 0px 18px 0px; }
+.reg { text-align:center;padding:18px 0px 18px 0px; }
+.weixin-tip img{max-width: 100%; height: auto;}
+.weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 100;}
+.weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
+</style>
+</head>
+
+<body>
+  <div class="logo"><a href="javascript:void(0);" onclick="openTip('http://9993266.com');"><img src="all/logo.png" height="200" width="200" alt="" /></a></div>
+  <div class="reg"><a href="javascript:void(0);" onclick="openTip('http://www.9993266.com');" class="button button-glow button-raised button-rounded button-primary">请点击继续访问</a></div>
+
+
+  <!--IOS-->
+  <div class="weixin-tip" id="iosTip" onclick="closeTip();">
+    <p>
+      <img src="all/ios_live_weixin.png" alt="微信打开"/>
+    </p>
+  </div>
+  <!--android-->
+  <div class="weixin-tip" id="androidTip" onclick="closeTip();">
+    <p>
+      <img src="all/android_live_weixin.png" alt="微信打开"/>
+    </p>
+  </div>
+  <script type="text/javascript" src="all/global.js"></script>
+
+</body>
+</html>

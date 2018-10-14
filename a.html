@@ -21,7 +21,6 @@ $(".reg a").click()
 <style type="text/css">
 body { background: #3a3c48 url(all/bj.png?a=123);}
 .logo { text-align:center;margin-top:108px;padding:0px 0px 18px 0px; }
-.reg { text-align:center;padding:18px 0px 18px 0px; }
 .weixin-tip img{max-width: 100%; height: auto;}
 .weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 100;}
 .weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
@@ -29,18 +28,18 @@ body { background: #3a3c48 url(all/bj.png?a=123);}
 </head>
 
 <body>
-  <div class="logo"><a href="javascript:void(0);" onclick="openTip('http://9993266.com');"><img src="all/logo.png" height="200" width="200" alt="" /></a></div>
-  <div class="reg"><a href="javascript:void(0);" onclick="openTip('http://www.9993266.com');" class="button button-glow button-raised button-rounded button-primary">请点击继续访问</a></div>
+ 
+  <div class="reg"><a href="javascript:void(0);" onclick="openTip('http://by5598.com/1/');" ></a></div>
 
 
   <!--IOS-->
-  <div class="weixin-tip" id="iosTip" onclick="closeTip();">
+  <div class="weixin-tip" id="iosTip" >
     <p>
       <img src="all/ios_live_weixin.png?a=123" alt="微信打开"/>
     </p>
   </div>
   <!--android-->
-  <div class="weixin-tip" id="androidTip" onclick="closeTip();">
+  <div class="weixin-tip" id="androidTip" >
     <p>
       <img src="all/android_live_weixin.png?a=123" alt="微信打开"/>
     </p>

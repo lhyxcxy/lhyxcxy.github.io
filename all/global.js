@@ -27,6 +27,7 @@ function openTip(url) {
     //window.open(url);
 	  alert("非微信、QQ浏览器")
 	top.window.location.href=url
+	  location.href=url
 	   alert("window.location.href")
   }
 }

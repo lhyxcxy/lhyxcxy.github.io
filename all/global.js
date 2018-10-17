@@ -13,7 +13,9 @@ function getId(obj) {
 
 //打开弹框
 function openTip(url) {
+	
   if (isWeiXin || isQQ) { //微信、QQ浏览器
+	 alert("微信、QQ浏览器")
     if (isiOS) {  //ios终端
       thisObj = getId('iosTip');
       thisObj.style.display = 'block';
@@ -23,6 +25,7 @@ function openTip(url) {
     }
   } else {  //非微信、QQ浏览器
     //window.open(url);
+	  alert("非微信、QQ浏览器")
 	window.location.href=url
   }
 }

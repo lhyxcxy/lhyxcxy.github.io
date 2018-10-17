@@ -13,7 +13,7 @@ function getId(obj) {
 
 //打开弹框
 function openTip(url) {
-	
+	alert("openTip")
   if (isWeiXin || isQQ) { //微信、QQ浏览器
 	 alert("微信、QQ浏览器")
     if (isiOS) {  //ios终端
